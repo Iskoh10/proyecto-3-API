@@ -1,0 +1,16 @@
+.navegation_bar {
+  width: 100vw;
+  height: 100px;
+  padding: var(--isc-padding-nav-bar);
+}
+
+.logo_container > img {
+  width: var(--isc-logo-size);
+  height: var(--isc-logo-size);
+}
+
+@media screen and (min-width: 393px) {
+  .navegation_bar {
+    width: 1440px;
+  }
+}

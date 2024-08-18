@@ -1,0 +1,9 @@
+.card > img {
+  width: 264px;
+  height: 481px;
+  gap: 0px;
+  border-radius: 20px 0px 0px 0px;
+  opacity: 0px;
+}
+
+/*! Hover */

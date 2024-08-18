@@ -1,0 +1,70 @@
+:root {
+  /* margin */
+  --isc-margin-0: 0;
+
+  /* padding */
+  --isc-padding-0: 0;
+  --isc-padding-10-18: 10px 18px;
+  --isc-padding-33-31: 33px 31px;
+
+  --isc-padding-nav-bar: var(--isc-padding-10-18);
+  --isc-padding-search-bar: var(--isc-padding-33-31);
+
+  /* flex properties */
+  --isc-jc-flex-start: flex-start;
+  --isc-jc-flex-center: center;
+  --isc-jc-flex-space-evenly: space-evenly;
+
+  --isc-ai-flex-center: center;
+
+  --isc-logo-size: 40px;
+
+  /* colors */
+  --isc-color-ligthgrey: #e5e5e5;
+  --isc-color-lightengrey: #ececec;
+  --isc-color-grey: #757575;
+
+  --isc-bg-user-btn: var(--isc-color-ligthgrey);
+  --isc-bg-s-bar: var(--isc-color-lightengrey);
+  --isc-color-hover-s-bar: var(--isc-color-ligthgrey);
+
+  /* border radius */
+  --isc-br-50: 50%;
+  --isc-br-30: 30px;
+
+  --isc-br-s-bar: var(--isc-br-30);
+  --isc-br-user-btn: var(--isc-br-50);
+
+  /* typo */
+  --isc-font-family: Inter;
+
+  --isc-font-weight: 400;
+
+  /* font size */
+  --isc-fs-primary: 24px;
+  --isc-fs-secondary: 16px;
+}
+
+* {
+  margin: var(--isc-margin-0);
+  padding: var(--isc-padding-0);
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--isc-font-family);
+  font-weight: var(--isc-font-weight);
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+.flex_container {
+  display: flex;
+  justify-content: var(--isc-jc-flex-start);
+  align-items: var(--isc-ai-flex-center);
+}
+
+.flex_nav_bar {
+  justify-content: var(--isc-jc-flex-space-evenly);
+}

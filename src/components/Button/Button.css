@@ -1,0 +1,69 @@
+.button {
+  width: Fixed (123px) px;
+  height: Fixed (60px) px;
+  padding: 33px 70px 33px 70px;
+  gap: 10px;
+  border-radius: 30px 0px 0px 0px;
+  opacity: 0px;
+}
+
+.button > p {
+  width: 94px;
+  height: 29px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: left;
+  background: #000000;
+}
+
+.button:active {
+  width: Fixed (123px) px;
+  height: Fixed (60px) px;
+  padding: 33px 70px 33px 70px;
+  gap: 10px;
+  border-radius: 30px 0px 0px 0px;
+  opacity: 0px;
+  background: #000000;
+}
+
+.button:active > p {
+  width: 60px;
+  height: 29px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29.05px;
+  text-align: left;
+  background: #ffffff;
+}
+
+.button.toVisit {
+  width: Fixed (123px) px;
+  height: Fixed (60px) px;
+  top: -299px;
+  left: 71.5px;
+  padding: 33px 70px 33px 70px;
+  gap: 10px;
+  border-radius: 30px 0px 0px 0px;
+  opacity: 0px;
+  background: #ff0000;
+}
+
+.button.toVisit > p {
+  width: 76px;
+  height: 29px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29.05px;
+  text-align: left;
+  background: #ffffff;
+}
