@@ -21,7 +21,19 @@ export const createNavegationBar = () => {
 
   createSearchBar(navContainer);
 
-  createUserButton(navContainer);
+  createUserButton({
+    parentNode: navContainer,
+    url: 'public/assets/notification.svg',
+    text: 'notification'
+  });
+
+  createUserButton({
+    parentNode: navContainer,
+    url: 'public/assets/message.svg',
+    text: 'message'
+  });
+
+  createUserButton({ parentNode: navContainer });
 
   document.body.appendChild(navContainer);
 };

@@ -14,17 +14,33 @@ export const createSearchBar = (parentNode) => {
   input.placeholder = 'Buscar';
   input.className = 'search_input';
 
-  input.addEventListener('focus', () => {
+  searchBar.appendChild(input);
+  parentNode.appendChild(searchBar);
+
+  const cancelIcon = document.createElement('img');
+  cancelIcon.src = 'public/assets/cancel.svg';
+  cancelIcon.classList.add('cancelIcon', 'display_none');
+
+  searchBar.appendChild(cancelIcon);
+
+  input.addEventListener('focus', (e) => {
     const searchImg = document.querySelector('.search_img');
     searchImg.classList.toggle('display_none');
+
+    const cancelIcon = document.querySelector('.cancelIcon');
+    cancelIcon.classList.toggle('display_none');
   });
 
   input.addEventListener('blur', () => {
     const searchImg = document.querySelector('.search_img');
     searchImg.classList.toggle('display_none');
+
+    const cancelIcon = document.querySelector('.cancelIcon');
+    cancelIcon.classList.toggle('display_none');
   });
 
-  searchBar.appendChild(input);
-
-  parentNode.appendChild(searchBar);
+  input.addEventListener('keydown', (e) => {
+    if (e.code === 'Escape') e.target.value = '';
+  });
 };
+//! Implementar la funcionalidad de x cuando el elemento no se muestra, no existe */

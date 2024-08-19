@@ -9,8 +9,7 @@
   height: var(--isc-logo-size);
 }
 
-@media screen and (min-width: 393px) {
-  .navegation_bar {
-    width: 1440px;
-  }
-}
+/* @media screen and (min-width: 600px) {
+  
+  
+} */

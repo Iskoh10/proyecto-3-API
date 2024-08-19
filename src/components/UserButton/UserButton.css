@@ -1,28 +1,39 @@
-.user_button {
-  width: 40px;
-  height: 40px;
+.navegation_bar button {
   border-radius: var(--isc-br-user-btn);
-  background-color: var(--isc-bg-user-btn);
+  height: 40px;
+  border: none;
+  background-color: transparent;
+}
+
+.navegation_bar > button.user_name {
+  min-width: 40px;
+  min-height: 40px;
   color: var(--isc-color-grey);
   font-size: var(--isc-fs-primary);
+  background-color: var(--isc-bg-user-btn);
 }
 
-.user_button.message {
-  width: 45.71px;
-  height: 40px;
-  top: 30px;
-  left: 1318.29px;
-
-  background: #757575;
+.img_notification,
+.img_message {
+  object-fit: contain;
+  height: 100%;
 }
 
-.user_button.notification {
-  width: 35px;
-  height: 40px;
-
-  background: #757575;
+.navegation_bar > button:first-of-type:hover {
+  background-color: var(--isc-bg-user-btn);
+  box-shadow: var(--isc-bs-user-btn);
 }
 
+.navegation_bar > button:nth-of-type(2):hover {
+  background-color: var(--isc-bg-user-btn);
+  box-shadow: var(--isc-bs-user-btn);
+}
+
+.navegation_bar > button.user_name:hover {
+  box-shadow: var(--isc-bs-user-btn);
+}
+
+/*! cartas */
 .user_button.pics {
   width: 60px;
   height: 60px;

@@ -28,6 +28,9 @@
   --isc-bg-s-bar: var(--isc-color-lightengrey);
   --isc-color-hover-s-bar: var(--isc-color-ligthgrey);
 
+  /* box shadow */
+  --isc-bs-user-btn: 0px 0px 10px 15px var(--isc-bg-user-btn);
+
   /* border radius */
   --isc-br-50: 50%;
   --isc-br-30: 30px;
