@@ -1,3 +1,4 @@
+import { createMainMenu, createButton } from '/src/components/Button/Button';
 import { createSearchBar } from '/src/components/SearchBar/SearchBar';
 import { createUserButton } from '/src/components/UserButton/UserButton';
 import './NavegationBar.css';
@@ -18,6 +19,8 @@ export const createNavegationBar = () => {
   logo.className = 'logo_container';
   divLogo.appendChild(logo);
   navContainer.appendChild(divLogo);
+
+  createMainMenu(navContainer);
 
   createSearchBar(navContainer);
 

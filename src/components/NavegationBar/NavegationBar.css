@@ -9,7 +9,9 @@
   height: var(--isc-logo-size);
 }
 
-/* @media screen and (min-width: 600px) {
-  
-  
-} */
+@media screen and (min-width: 600px) {
+  .button_menu,
+  .user_button {
+    display: block;
+  }
+}

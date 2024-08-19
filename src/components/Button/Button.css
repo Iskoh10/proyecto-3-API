@@ -1,47 +1,31 @@
-.button {
-  width: Fixed (123px) px;
-  height: Fixed (60px) px;
-  padding: 33px 70px 33px 70px;
+.main_button {
+  width: 123px;
+  height: 60px;
   gap: 10px;
-  border-radius: 30px 0px 0px 0px;
-  opacity: 0px;
+
+  justify-content: var(--isc-jc-flex-center);
+  align-items: var(--isc-ai-flex-center);
 }
 
-.button > p {
-  width: 94px;
-  height: 29px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29.05px;
-  text-align: left;
-  background: #000000;
+.button_menu {
+  font-size: var(--isc-fs-primary);
 }
 
-.button:active {
-  width: Fixed (123px) px;
-  height: Fixed (60px) px;
-  padding: 33px 70px 33px 70px;
-  gap: 10px;
-  border-radius: 30px 0px 0px 0px;
-  opacity: 0px;
-  background: #000000;
+.button_menu:focus {
+  border-radius: var(--isc-br-30);
+  width: 100%;
+  height: 100%;
+  background-color: var(--isc-bg-btn-menu);
+  color: var(--isc-fc-active-btn-menu);
 }
 
-.button:active > p {
-  width: 60px;
-  height: 29px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29.05px;
-  text-align: left;
-  background: #ffffff;
+@media screen and (min-width: 600px) {
+  header > div:nth-of-type(2) div.button_menu {
+    display: block;
+  }
 }
+
+/*!  carta */
 
 .button.toVisit {
   width: Fixed (123px) px;

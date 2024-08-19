@@ -9,13 +9,13 @@ export function createUserButton({ parentNode, url, text }) {
 
     imgNotification.src = 'public/assets/notification.svg';
     imgNotification.alt = 'Notification';
-    imgNotification.classList.add('img_notification');
+    imgNotification.classList.add('img_notification', 'display_none');
     button.appendChild(imgNotification);
   } else if (text === 'message') {
     const imgMessage = document.createElement('img');
     imgMessage.src = url;
     imgMessage.alt = 'Message';
-    imgMessage.classList.add('img_message');
+    imgMessage.classList.add('img_message', 'display_none');
     button.appendChild(imgMessage);
   } else {
     button.textContent = 'I';

@@ -1,8 +1,11 @@
-.navegation_bar button {
+.navegation_bar > .img_notification,
+.navegation_bar > .img_message,
+.navegation_bar > .user_name {
   border-radius: var(--isc-br-user-btn);
   height: 40px;
   border: none;
   background-color: transparent;
+  margin: var(--isc-mg-user-btn);
 }
 
 .navegation_bar > button.user_name {
