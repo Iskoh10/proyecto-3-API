@@ -1,4 +1,7 @@
-import { createSvg } from '/src/components/SvgMenu/SvgMenu';
+import {
+  createBurgerMenu,
+  createDropDown
+} from '/src/components/BurgerMenu/BurgerMenu';
 import { createMainMenu } from '/src/components/Button/Button';
 import { createSearchBar } from '/src/components/SearchBar/SearchBar';
 import {
@@ -24,9 +27,11 @@ export const createNavegationBar = () => {
   divLogo.appendChild(logo);
   navContainer.appendChild(divLogo);
 
-  createSvg(navContainer);
+  createBurgerMenu(navContainer);
 
   createMainMenu(navContainer);
+
+  createDropDown(navContainer);
 
   createSearchBar(navContainer);
 
