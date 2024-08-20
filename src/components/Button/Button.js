@@ -2,7 +2,12 @@ import './Button.css';
 
 export const createMainMenu = (parentNode) => {
   const mainButtons = document.createElement('div');
-  mainButtons.classList.add('flex_container', 'flex_btn_menu', 'main_button');
+  mainButtons.classList.add(
+    'flex_container',
+    'flex_btn_menu',
+    'main_button',
+    'display_none'
+  );
 
   parentNode.appendChild(mainButtons);
   createButton({ parentNode: mainButtons, text: 'Inicio' });
@@ -13,7 +18,7 @@ export const createMainMenu = (parentNode) => {
 export const createButton = ({ parentNode, text }) => {
   const button = document.createElement('button');
   button.textContent = text;
-  button.classList.add('button_menu', 'display_none');
+  button.classList.add('button_menu');
 
   parentNode.appendChild(button);
 };

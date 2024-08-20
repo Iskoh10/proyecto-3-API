@@ -1,6 +1,10 @@
-import { createMainMenu, createButton } from '/src/components/Button/Button';
+import { createSvg } from '/src/components/SvgMenu/SvgMenu';
+import { createMainMenu } from '/src/components/Button/Button';
 import { createSearchBar } from '/src/components/SearchBar/SearchBar';
-import { createUserButton } from '/src/components/UserButton/UserButton';
+import {
+  createUserBox,
+  createUserButton
+} from '/src/components/UserButton/UserButton';
 import './NavegationBar.css';
 
 export const createNavegationBar = () => {
@@ -20,21 +24,13 @@ export const createNavegationBar = () => {
   divLogo.appendChild(logo);
   navContainer.appendChild(divLogo);
 
+  createSvg(navContainer);
+
   createMainMenu(navContainer);
 
   createSearchBar(navContainer);
 
-  createUserButton({
-    parentNode: navContainer,
-    url: 'public/assets/notification.svg',
-    text: 'notification'
-  });
-
-  createUserButton({
-    parentNode: navContainer,
-    url: 'public/assets/message.svg',
-    text: 'message'
-  });
+  createUserBox(navContainer);
 
   createUserButton({ parentNode: navContainer });
 

@@ -1,39 +1,45 @@
-.navegation_bar > .img_notification,
-.navegation_bar > .img_message,
-.navegation_bar > .user_name {
-  border-radius: var(--isc-br-user-btn);
+.user_box {
   height: 40px;
-  border: none;
-  background-color: transparent;
-  margin: var(--isc-mg-user-btn);
+  min-width: 8%;
+  gap: 18px;
 }
 
-.navegation_bar > button.user_name {
+.user_box button {
+  border-radius: var(--isc-br-50);
+  height: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.user_box button:hover {
+  background-color: var(--isc-bg-user-btn);
+  box-shadow: var(--isc-bs-user-btn);
+}
+
+.navegation_bar > .user_name {
   min-width: 40px;
   min-height: 40px;
   color: var(--isc-color-grey);
   font-size: var(--isc-fs-primary);
+  border-radius: var(--isc-br-user-btn);
+  border: none;
   background-color: var(--isc-bg-user-btn);
+  margin-left: var(--isc-mg-user-btn);
 }
 
-.img_notification,
-.img_message {
-  object-fit: contain;
-  height: 100%;
-}
-
-.navegation_bar > button:first-of-type:hover {
-  background-color: var(--isc-bg-user-btn);
-  box-shadow: var(--isc-bs-user-btn);
-}
-
-.navegation_bar > button:nth-of-type(2):hover {
-  background-color: var(--isc-bg-user-btn);
-  box-shadow: var(--isc-bs-user-btn);
+.navegation_bar > button.user_name {
 }
 
 .navegation_bar > button.user_name:hover {
   box-shadow: var(--isc-bs-user-btn);
+}
+
+@media screen and (min-width: 600px) {
+  div.user_box {
+    display: flex;
+    justify-content: var(--isc-jc-flex-space-between);
+    margin: 1%;
+  }
 }
 
 /*! cartas */

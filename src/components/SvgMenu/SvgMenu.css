@@ -1,0 +1,30 @@
+.div_svg {
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+svg {
+  background: white;
+  stroke: black;
+  stroke-width: 3;
+  width: 40px;
+  height: 40px;
+}
+
+svg:hover {
+  #uno {
+    transform: rotate(45deg) translate(8px, -10px);
+    stroke-linecap: round;
+    stroke-width: 5;
+  }
+  #dos {
+    transform: translateX(-35px);
+  }
+
+  #tres {
+    transform: rotate(-45deg) translate(-20px, -2px);
+    stroke-linecap: round;
+    stroke-width: 5;
+  }
+}

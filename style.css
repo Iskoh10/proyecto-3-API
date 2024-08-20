@@ -17,6 +17,7 @@
   --isc-jc-flex-start: flex-start;
   --isc-jc-flex-center: center;
   --isc-jc-flex-space-evenly: space-evenly;
+  --isc-jc-flex-space-between: space-between;
 
   --isc-ai-flex-center: center;
 
@@ -81,4 +82,8 @@ ul {
 
 .flex_btn_menu {
   justify-content: var(--isc-jc-flex-center);
+}
+
+.display_none {
+  display: none;
 }

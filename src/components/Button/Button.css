@@ -1,27 +1,29 @@
 .main_button {
-  width: 123px;
+  min-width: 405px;
   height: 60px;
-  gap: 10px;
-
+  gap: 20px;
   justify-content: var(--isc-jc-flex-center);
   align-items: var(--isc-ai-flex-center);
 }
 
 .button_menu {
+  width: 123px;
   font-size: var(--isc-fs-primary);
+  background-color: transparent;
+  border: none;
 }
 
 .button_menu:focus {
   border-radius: var(--isc-br-30);
-  width: 100%;
+  width: 30%;
   height: 100%;
   background-color: var(--isc-bg-btn-menu);
   color: var(--isc-fc-active-btn-menu);
 }
 
 @media screen and (min-width: 600px) {
-  header > div:nth-of-type(2) div.button_menu {
-    display: block;
+  div.main_button {
+    display: flex;
   }
 }
 
