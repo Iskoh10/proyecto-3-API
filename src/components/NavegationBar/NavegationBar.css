@@ -2,7 +2,9 @@
   width: 100vw;
   height: 100px;
   padding: var(--isc-padding-nav-bar);
-  position: relative;
+  position: fixed;
+  top: 0;
+  background-color: #fcfefea1;
 }
 
 .logo_container > img {
@@ -14,11 +16,5 @@
   .button_menu,
   .user_button {
     display: block;
-  }
-  .div_menu {
-    display: none;
-  }
-  div.dp_content {
-    display: none;
   }
 }

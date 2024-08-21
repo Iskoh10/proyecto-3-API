@@ -1,9 +1,10 @@
 import { createNavegationBar } from './src/components/NavegationBar/NavegationBar';
-import { createImg } from './src/components/Card/Image/Image';
+import { createCard } from './src/components/Card/Card';
+
+// import { createImg } from './src/components/Card/Image/Image';
+// import { createBottomBox } from './src/components/Card/BottomBox/BottomBox';
 
 import './style.css';
-
-/* Hacer la funcionalidad de cargar a medida de que se hace scroll */
 
 createNavegationBar();
 
@@ -26,11 +27,20 @@ async function getImages(word) {
     console.log(image.urls.small);
     console.log(image.user.name);
     console.log(image.alternative_slugs.es);
+    console.log(image.id);
     console.log(image.user.profile_image.large);
     console.log(image.created_at);
     console.log(image.user.total_photos);
 
-    createImg({ url: image.urls.small, alt: image.alternative_slugs.es });
+    createCard({
+      url: image.urls.small,
+      alt: image.alternative_slugs.es,
+      name: image.user.name,
+      date: image.created_at,
+      id: image.id
+    });
+    // createImg({ url: image.urls.small, alt: image.alternative_slugs.es });
+    // createBottomBox({ name: image.user.name, date: image.created_at });
   }
 }
 

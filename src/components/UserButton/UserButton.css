@@ -2,6 +2,8 @@
   height: 40px;
   min-width: 8%;
   gap: 18px;
+  display: flex;
+  margin: 0 10px;
 }
 
 .user_box button {
@@ -11,34 +13,28 @@
   background-color: transparent;
 }
 
+.img_notification,
+.img_message {
+  display: none;
+}
+
+button.user_name {
+  min-width: 40px;
+  font-size: var(--isc-fs-primary);
+  background-color: var(--isc-bg-user-btn);
+  color: var(--isc-color-grey);
+  border: none;
+}
+
 .user_box button:hover {
   background-color: var(--isc-bg-user-btn);
   box-shadow: var(--isc-bs-user-btn);
 }
 
-.navegation_bar > .user_name {
-  min-width: 40px;
-  min-height: 40px;
-  color: var(--isc-color-grey);
-  font-size: var(--isc-fs-primary);
-  border-radius: var(--isc-br-user-btn);
-  border: none;
-  background-color: var(--isc-bg-user-btn);
-  margin-left: var(--isc-mg-user-btn);
-}
-
-.navegation_bar > button.user_name {
-}
-
-.navegation_bar > button.user_name:hover {
-  box-shadow: var(--isc-bs-user-btn);
-}
-
 @media screen and (min-width: 600px) {
-  div.user_box {
-    display: flex;
-    justify-content: var(--isc-jc-flex-space-between);
-    margin: 1%;
+  .img_notification,
+  .img_message {
+    display: block;
   }
 }
 

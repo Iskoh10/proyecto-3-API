@@ -38,7 +38,6 @@
 
 @media screen and (min-width: 600px) {
   .search_bar {
-    width: 750px;
-    flex-grow: 2;
+    flex-grow: 1;
   }
 }

@@ -2,7 +2,7 @@ import './UserButton.css';
 
 export const createUserBox = (parentNode) => {
   const userBox = document.createElement('div');
-  userBox.classList.add('user_box', 'flex_container', 'display_none');
+  userBox.classList.add('user_box', 'flex_container');
 
   parentNode.appendChild(userBox);
 
@@ -16,6 +16,8 @@ export const createUserBox = (parentNode) => {
     url: 'public/assets/message.svg',
     text: 'message'
   });
+
+  createUserButton({ parentNode: userBox });
 };
 
 export function createUserButton({ parentNode, url, text }) {
@@ -24,7 +26,6 @@ export function createUserButton({ parentNode, url, text }) {
 
   if (url && text === 'notification') {
     const imgNotification = document.createElement('img');
-
     imgNotification.src = 'public/assets/notification.svg';
     imgNotification.alt = 'Notification';
     imgNotification.classList.add('img_notification');
@@ -36,8 +37,10 @@ export function createUserButton({ parentNode, url, text }) {
     imgMessage.classList.add('img_message');
     button.appendChild(imgMessage);
   } else {
-    button.textContent = 'I';
+    const p = document.createElement('p');
+    p.textContent = 'I';
     button.classList.add('user_name');
+    button.appendChild(p);
   }
 
   parentNode.appendChild(button);

@@ -1,18 +1,17 @@
 import './Image.css';
 
-const navContainer = document.querySelector('.navegation_bar');
-const imgContainer = document.createElement('div');
-imgContainer.className = 'img_container';
-document.body.appendChild(imgContainer);
-
-export const createImg = ({ url, alt }) => {
+export const createImg = ({ url, alt, parentNode, id }) => {
   const divImg = document.createElement('div');
   divImg.className = 'div_img';
 
   const img = document.createElement('img');
   img.src = url;
-  img.alt = alt;
+
+  const altMid = alt.replace(id, '');
+  const altFixed = altMid.replaceAll('-', ' ');
+  console.log(altFixed);
+  img.alt = altFixed;
 
   divImg.appendChild(img);
-  imgContainer.appendChild(divImg);
+  parentNode.appendChild(divImg);
 };

@@ -1,22 +1,29 @@
-.card > img {
-  width: 264px;
-  height: 481px;
-  gap: 0px;
-  border-radius: 20px 0px 0px 0px;
-  opacity: 0px;
-}
-
 .img_container {
-  width: 80vw;
-  display: grid;
-  justify-content: center;
-  margin: 5px auto;
-  grid-template-columns: repeat(4, 1fr);
-
-  grid-gap: 20px;
+  width: 100%;
+  columns: 4;
+  column-gap: 1rem;
+  margin: 15% 0;
+  padding: 2%;
+  border: 1px solid orange;
 }
 
 .img_container div {
-  width: 90%;
+  break-inside: avoid;
 }
-/*! Hover */
+
+.div_img > img {
+  width: 100%;
+
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.div_img > img:hover {
+  filter: blur(2px);
+}
+
+@media screen and (max-width: 865px) {
+  .img_container {
+    margin-top: 15%;
+  }
+}

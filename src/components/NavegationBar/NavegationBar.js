@@ -4,10 +4,7 @@ import {
 } from '/src/components/BurgerMenu/BurgerMenu';
 import { createMainMenu } from '/src/components/Button/Button';
 import { createSearchBar } from '/src/components/SearchBar/SearchBar';
-import {
-  createUserBox,
-  createUserButton
-} from '/src/components/UserButton/UserButton';
+import { createUserBox } from '/src/components/UserButton/UserButton';
 import './NavegationBar.css';
 
 export const createNavegationBar = () => {
@@ -36,8 +33,6 @@ export const createNavegationBar = () => {
   createSearchBar(navContainer);
 
   createUserBox(navContainer);
-
-  createUserButton({ parentNode: navContainer });
 
   document.body.appendChild(navContainer);
 };

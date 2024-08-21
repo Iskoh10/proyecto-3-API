@@ -9,6 +9,7 @@
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
+  margin: 0 10px;
   border: 1px solid green;
 }
 
@@ -60,6 +61,8 @@
   background-color: #16111110;
   backdrop-filter: blur(0.4rem);
   border-radius: 5px;
+  border: 1px solid black;
+  z-index: 1;
   width: 110px;
   height: 100px;
   padding: 2%;
