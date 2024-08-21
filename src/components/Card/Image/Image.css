@@ -6,4 +6,17 @@
   opacity: 0px;
 }
 
+.img_container {
+  width: 80vw;
+  display: grid;
+  justify-content: center;
+  margin: 5px auto;
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-gap: 20px;
+}
+
+.img_container div {
+  width: 90%;
+}
 /*! Hover */

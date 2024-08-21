@@ -31,12 +31,13 @@ export const createSearchBar = (parentNode) => {
     cancelIcon.classList.toggle('display_none');
   });
 
-  input.addEventListener('blur', () => {
+  input.addEventListener('blur', (e) => {
     const searchImg = document.querySelector('.search_img');
     searchImg.classList.toggle('display_none');
 
     const cancelIcon = document.querySelector('.cancelIcon');
     cancelIcon.classList.toggle('display_none');
+    e.target.value = '';
   });
 
   input.addEventListener('keydown', (e) => {
