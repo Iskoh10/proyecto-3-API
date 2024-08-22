@@ -16,6 +16,7 @@ const endPoint = 'https://api.unsplash.com/search/photos';
 async function getImages(word) {
   const imgContainer = document.querySelector('.img_container');
   imgContainer.innerHTML = '';
+  window.scrollTo(0, 0);
 
   const response = await fetch(
     endPoint + '?query=' + word + '&client_id=' + accesKey
@@ -42,7 +43,10 @@ async function getImages(word) {
         alt: image.alternative_slugs.es,
         name: image.user.name,
         date: image.created_at,
-        id: image.id
+        id: image.id,
+        likes: image.likes,
+        photos: image.user.total_photos,
+        author: image.user.profile_image.large
       });
     }
   }
@@ -50,7 +54,6 @@ async function getImages(word) {
 
 createFooter();
 
-//! comprobar funcionalidad keydown
 const input = document.querySelector('.search_input');
 input.addEventListener('keydown', (e) => {
   if (e.key === 'Enter') {

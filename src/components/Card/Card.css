@@ -19,31 +19,33 @@
   outline: 1px solid black;
 }
 
+.div_card:hover > .div_img > img {
+  filter: grayscale(80%);
+}
+
+.div_card:hover > .div_img > .div_likes,
+.div_card:hover > .div_img > .div_photos,
+.div_card:hover > .div_img > .div_author {
+  opacity: 100%;
+}
+
 .p_error_m,
 .p_m_nf {
   font-size: var(--isc-fs-primary);
   font-weight: 600;
-}
-
-.p_error_m {
-  animation: errorMessage 2s ease-in-out;
+  animation: errorMessage 2s ease-in-out forwards;
 }
 
 @keyframes errorMessage {
   0% {
     scale: 0;
   }
-  50% {
-    scale: 1;
-  }
+  50%,
   100% {
-    scale: 2;
+    scale: 1.5;
   }
 }
 
 .p_m_nf {
   color: red;
 }
-
-/* Posicionar .card > img */
-/* Posicionar .bottom_box */

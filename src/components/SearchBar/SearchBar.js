@@ -31,6 +31,7 @@ export const createSearchBar = (parentNode) => {
     cancelIcon.classList.toggle('display_none');
   });
 
+  // Borra el valor del input tanto si quitamos el foco de él como si presionamos el boton X
   input.addEventListener('blur', (e) => {
     const searchImg = document.querySelector('.search_img');
     searchImg.classList.toggle('display_none');
@@ -40,7 +41,7 @@ export const createSearchBar = (parentNode) => {
     e.target.value = '';
   });
 
-  // Borra el valor al darle a esc
+  // Borra el valor del input al presionar a Esc
   input.addEventListener('keydown', (e) => {
     if (e.code === 'Escape') e.target.value = '';
   });
