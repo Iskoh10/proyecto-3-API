@@ -8,6 +8,8 @@
 .home > p {
   font-size: var(--isc-fs-primary);
   font-weight: 600;
+  text-align: center;
+  text-wrap: wrap;
 }
 
 .div_card {

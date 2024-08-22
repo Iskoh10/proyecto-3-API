@@ -18,26 +18,22 @@ async function getImages(word) {
   imgContainer.innerHTML = '';
   window.scrollTo(0, 0);
 
-  const response = await fetch(
-    endPoint + '?query=' + word + '&client_id=' + accesKey
-  );
-  const jsonResponse = await response.json();
-  const imagesList = await jsonResponse;
+  let imagesList = [];
+  try {
+    const response = await fetch(
+      `${endPoint}?query=${word}&client_id=${accesKey}`
+    );
+    const jsonResponse = await response.json();
+    imagesList = await jsonResponse;
+  } catch (error) {
+    console.log(error);
+  }
 
   if (imagesList.results.length === 0) {
     createMessageNF();
   } else {
     console.log(imagesList.results);
     for (const image of imagesList.results) {
-      console.log(image.likes);
-      console.log(image.urls.small);
-      console.log(image.user.name);
-      console.log(image.alternative_slugs.es);
-      console.log(image.id);
-      console.log(image.user.profile_image.large);
-      console.log(image.created_at);
-      console.log(image.user.total_photos);
-
       createCard({
         url: image.urls.small,
         alt: image.alternative_slugs.es,

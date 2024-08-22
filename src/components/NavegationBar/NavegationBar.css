@@ -1,10 +1,11 @@
 .navegation_bar {
-  width: 100vw;
+  width: 95vw;
   height: 100px;
   padding: var(--isc-padding-nav-bar);
   position: fixed;
   top: 0;
   background-color: #fcfefea1;
+  border: 1px solid red;
 }
 
 .logo_container > img {
