@@ -1,9 +1,10 @@
-.main_button {
-  min-width: 405px;
+div.main_button {
+  width: 400px;
   height: 60px;
   gap: 20px;
   justify-content: var(--isc-jc-flex-center);
   align-items: var(--isc-ai-flex-center);
+  display: none;
 }
 
 .button_menu {
@@ -21,7 +22,10 @@
   color: var(--isc-fc-active-btn-menu);
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
+  div.main_button {
+    display: flex;
+  }
 }
 
 /*!  carta */

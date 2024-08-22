@@ -35,6 +35,7 @@
   --isc-bg-user-btn: var(--isc-color-ligthgrey);
   --isc-bg-s-bar: var(--isc-color-lightengrey);
   --isc-color-hover-s-bar: var(--isc-color-ligthgrey);
+  --isc-bg-footer: var(--isc-color-black);
 
   /* box shadow */
   --isc-bs-user-btn: 0px 0px 10px 15px var(--isc-bg-user-btn);
@@ -48,8 +49,8 @@
 
   /* typo */
   --isc-font-family: Inter;
-
   --isc-font-weight: 400;
+  --isc-fc-footer: var(--isc-color-ligthgrey);
 
   /* font size */
   --isc-fs-primary: 24px;
@@ -72,16 +73,11 @@ ul {
 
 .flex_container {
   display: flex;
-  justify-content: var(--isc-jc-flex-start);
   align-items: var(--isc-ai-flex-center);
 }
 
 .flex_nav_bar {
   justify-content: var(--isc-jc-flex-space-evenly);
-}
-
-.flex_btn_menu {
-  justify-content: var(--isc-jc-flex-center);
 }
 
 .display_none {

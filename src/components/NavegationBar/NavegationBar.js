@@ -18,6 +18,8 @@ export const createNavegationBar = () => {
   const divLogo = document.createElement('div');
   divLogo.className = 'logo_container';
 
+  divLogo.addEventListener('click', () => window.location.reload());
+
   const logo = document.createElement('img');
   logo.src = 'assets/pintplash_icon.svg';
   logo.className = 'logo_container';

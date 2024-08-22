@@ -83,3 +83,9 @@
   position: relative;
   font-weight: 600;
 }
+
+@media screen and (min-width: 1000px) {
+  .div_menu {
+    display: none;
+  }
+}

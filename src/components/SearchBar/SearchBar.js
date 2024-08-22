@@ -11,7 +11,7 @@ export const createSearchBar = (parentNode) => {
   searchBar.appendChild(img);
 
   const input = document.createElement('input');
-  input.placeholder = 'Buscar';
+  input.placeholder = 'Search...';
   input.className = 'search_input';
 
   searchBar.appendChild(input);
@@ -40,6 +40,7 @@ export const createSearchBar = (parentNode) => {
     e.target.value = '';
   });
 
+  // Borra el valor al darle a esc
   input.addEventListener('keydown', (e) => {
     if (e.code === 'Escape') e.target.value = '';
   });

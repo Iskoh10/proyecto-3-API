@@ -1,10 +1,48 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.home > p {
+  font-size: var(--isc-fs-primary);
+  font-weight: 600;
+}
+
 .div_card {
-  display: block;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
   position: relative;
   outline: 1px solid black;
+}
+
+.p_error_m,
+.p_m_nf {
+  font-size: var(--isc-fs-primary);
+  font-weight: 600;
+}
+
+.p_error_m {
+  animation: errorMessage 2s ease-in-out;
+}
+
+@keyframes errorMessage {
+  0% {
+    scale: 0;
+  }
+  50% {
+    scale: 1;
+  }
+  100% {
+    scale: 2;
+  }
+}
+
+.p_m_nf {
+  color: red;
 }
 
 /* Posicionar .card > img */

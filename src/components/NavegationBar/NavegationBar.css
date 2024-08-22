@@ -10,11 +10,14 @@
 .logo_container > img {
   width: var(--isc-logo-size);
   height: var(--isc-logo-size);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
-  .button_menu,
   .user_button {
     display: block;
   }
+}
+
+@media screen and (min-width: 865px) {
 }

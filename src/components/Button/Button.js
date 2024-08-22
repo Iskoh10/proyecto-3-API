@@ -2,12 +2,7 @@ import './Button.css';
 
 export const createMainMenu = (parentNode) => {
   const mainButtons = document.createElement('div');
-  mainButtons.classList.add(
-    'flex_container',
-    'flex_btn_menu',
-    'main_button',
-    'display_none'
-  );
+  mainButtons.classList.add('flex_container', 'flex_btn_menu', 'main_button');
 
   parentNode.appendChild(mainButtons);
   createButton({ parentNode: mainButtons, text: 'Inicio' });
