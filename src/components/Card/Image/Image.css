@@ -3,7 +3,6 @@
   columns: 4 200px;
   column-gap: 1rem;
   padding: var(--isc-padding-imgContainer);
-  border: 1px solid red;
 }
 
 .img_container div {
