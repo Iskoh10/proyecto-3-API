@@ -1,11 +1,11 @@
 .user_box {
   height: 40px;
   min-width: 8%;
-  gap: 18px;
-  display: flex;
+  gap: var(--isc-gap-userBox);
   justify-content: center;
   align-items: center;
-  margin: 0 10px;
+  margin: var(--isc-margin-userBox);
+  display: var(--isc-d-none);
 }
 
 .user_box button {
@@ -15,29 +15,46 @@
   background-color: transparent;
 }
 
-.img_notification,
-.img_message {
-  display: none;
-  visibility: hidden;
+.img_message,
+.img_notification {
+  height: 100%;
 }
 
 button.user_name {
-  min-width: 40px;
-  font-size: var(--isc-fs-primary);
+  width: 40px;
+  height: 100%;
   background-color: var(--isc-bg-user-btn);
   color: var(--isc-color-grey);
   border: none;
-  place-content: center;
+  flex-direction: var(--isc-fd-column);
+  padding: var(--isc-padding-btn-userName);
 }
 
-.user_box button:hover {
+.user_name > p {
+  font-size: var(--isc-fs-primary);
+}
+
+.user_box button:hover,
+.button_only_name:hover {
   background-color: var(--isc-bg-user-btn);
   box-shadow: var(--isc-bs-user-btn);
 }
 
+.button_only_name {
+  width: 40px;
+  height: 40px;
+  font-size: var(--isc-fs-primary);
+  background-color: var(--isc-bg-user-btn);
+  color: var(--isc-color-grey);
+  border-radius: var(--isc-br-50);
+  border: var(--isc-b-none);
+}
+
 @media screen and (min-width: 600px) {
-  .img_notification,
-  .img_message {
-    display: block;
+  .user_box {
+    display: var(--isc-d-flex);
+  }
+  .button_only_name {
+    display: none;
   }
 }

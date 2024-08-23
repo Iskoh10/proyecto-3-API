@@ -4,6 +4,15 @@ export const createUserBox = (parentNode) => {
   const userBox = document.createElement('div');
   userBox.classList.add('user_box');
 
+  const button1 = document.createElement('button');
+  button1.className = 'button_only_name';
+
+  const p1 = document.createElement('p');
+  p1.textContent = 'I';
+
+  button1.appendChild(p1);
+  parentNode.appendChild(button1);
+
   parentNode.appendChild(userBox);
 
   createUserButton({
@@ -39,11 +48,9 @@ export function createUserButton({ parentNode, url, text }) {
   } else {
     const p = document.createElement('p');
     p.textContent = 'I';
-    button.classList.add('user_name');
+    button.classList.add('user_name', 'flex_container');
     button.appendChild(p);
   }
 
   parentNode.appendChild(button);
 }
-
-//! Cambiar botonera de 3 por 1 button user en vez de ocultar 2 de ellos, ocultar la botonera de 3 y mostrar solo la de 1.

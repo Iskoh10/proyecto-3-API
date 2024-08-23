@@ -4,7 +4,7 @@ import { createBottomBox } from '/src/components/Card/BottomBox/BottomBox';
 import './Card.css';
 
 const imgContainer = document.createElement('div');
-imgContainer.classList.add('img_container', 'home');
+imgContainer.classList.add('img_container', 'home', 'flex_container');
 const pHomeMessage = document.createElement('p');
 pHomeMessage.textContent =
   "Hi!, I'm your gallery, search for a word and press the enter key! :)";
@@ -13,7 +13,7 @@ document.body.appendChild(imgContainer);
 
 export const createMessageError = () => {
   imgContainer.innerHTML = '';
-  imgContainer.classList.add('home');
+  imgContainer.classList.add('home', 'flex_container');
   const pErrorMessage = document.createElement('p');
   pErrorMessage.className = 'p_error_m';
   pErrorMessage.textContent = 'My cute friend, search something! :)';
@@ -23,7 +23,7 @@ export const createMessageError = () => {
 
 export const createMessageNF = () => {
   imgContainer.innerHTML = '';
-  imgContainer.classList.add('home');
+  imgContainer.classList.add('home', 'flex_container');
   const pMessageNF = document.createElement('p');
   pMessageNF.className = 'p_m_nf';
   pMessageNF.textContent = `I'm sorry, No images found :(`;
@@ -41,7 +41,7 @@ export const createCard = ({
   photos,
   author
 }) => {
-  imgContainer.classList.remove('home');
+  imgContainer.classList.remove('home', 'flex_container');
   const divCard = document.createElement('div');
   divCard.className = 'div_card';
 

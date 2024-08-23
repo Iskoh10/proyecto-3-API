@@ -2,7 +2,7 @@ import './BurgerMenu.css';
 
 export const createBurgerMenu = (parentNode) => {
   const divMenu = document.createElement('div');
-  divMenu.className = 'div_menu';
+  divMenu.classList.add('div_menu', 'flex_container');
 
   divMenu.addEventListener('click', () => {
     const menu = document.querySelector('.div_menu');

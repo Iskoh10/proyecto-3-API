@@ -1,17 +1,17 @@
 div.main_button {
   width: 400px;
   height: 60px;
-  gap: 20px;
+  gap: var(--isc-gap-main-button);
   justify-content: var(--isc-jc-flex-center);
   align-items: var(--isc-ai-flex-center);
-  display: none;
+  display: var(--isc-d-none);
 }
 
 .button_menu {
   width: 123px;
   font-size: var(--isc-fs-primary);
   background-color: transparent;
-  border: none;
+  border: var(--isc-b-none);
 }
 
 .button_menu:focus {
@@ -24,33 +24,6 @@ div.main_button {
 
 @media screen and (min-width: 1000px) {
   div.main_button {
-    display: flex;
+    display: var(--isc-d-flex);
   }
-}
-
-/*!  carta */
-
-.button.toVisit {
-  width: Fixed (123px) px;
-  height: Fixed (60px) px;
-  top: -299px;
-  left: 71.5px;
-  padding: 33px 70px 33px 70px;
-  gap: 10px;
-  border-radius: 30px 0px 0px 0px;
-  opacity: 0px;
-  background: #ff0000;
-}
-
-.button.toVisit > p {
-  width: 76px;
-  height: 29px;
-  gap: 0px;
-  opacity: 0px;
-  font-family: Inter;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 29.05px;
-  text-align: left;
-  background: #ffffff;
 }

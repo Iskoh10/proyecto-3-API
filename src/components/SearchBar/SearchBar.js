@@ -46,4 +46,3 @@ export const createSearchBar = (parentNode) => {
     if (e.code === 'Escape') e.target.value = '';
   });
 };
-//! Implementar la funcionalidad de x cuando el elemento no se muestra, no existe */

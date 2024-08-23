@@ -2,8 +2,8 @@
   width: 100%;
   columns: 4 200px;
   column-gap: 1rem;
-  padding: 15% 0;
-  border: 1px solid orange;
+  padding: var(--isc-padding-imgContainer);
+  border: 1px solid red;
 }
 
 .img_container div {
@@ -12,28 +12,25 @@
 }
 
 .div_img {
-  position: relative;
+  position: var(--isc-pr);
 }
 
 .div_img > img {
   width: 100%;
   object-fit: cover;
-  border-radius: 30px;
+  border-radius: var(--isc-br-30);
 }
 
 div.div_likes,
 div.div_photos {
   width: 60px;
   height: 60px;
-  display: flex;
   opacity: 0;
   z-index: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  position: absolute;
-  border-radius: 50%;
+  flex-direction: var(--isc-fd-column);
+  gap: var(--isc-gap-likes-photos);
+  position: var(--isc-pa);
+  border-radius: var(--isc-br-likes-photos);
   background-color: var(--isc-color-ligthgrey);
 }
 
@@ -48,17 +45,17 @@ div.div_photos {
 }
 
 div.div_author {
-  width: 120px;
-  height: 120px;
-  position: absolute;
+  width: 100px;
+  height: 100px;
+  position: var(--isc-pa);
   opacity: 0;
   bottom: -20px;
   right: 0;
   left: 0;
-  margin: auto;
-  border-radius: 50%;
+  margin: var(--isc-margin-auto);
+  border-radius: var(--isc-br-author);
   overflow: hidden;
-  border: 10px solid greenyellow;
+  border: var(--isc-b-author);
 }
 
 .div_author > img {
@@ -66,20 +63,32 @@ div.div_author {
   object-fit: cover;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 375px) {
   .img_container {
     margin-top: 25%;
   }
 }
 
-@media screen and (min-width: 865px) {
+@media screen and (max-width: 460px) {
+  .img_container {
+    margin-top: 25%;
+  }
+}
+
+@media screen and (min-width: 600px) {
   .img_container {
     margin-top: 15%;
   }
 }
 
+@media screen and (min-width: 865px) {
+  .img_container {
+    margin-top: 12%;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .img_container {
-    margin-top: 10%;
+    margin-top: 6%;
   }
 }

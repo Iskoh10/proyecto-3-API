@@ -32,7 +32,6 @@ async function getImages(word) {
   if (imagesList.results.length === 0) {
     createMessageNF();
   } else {
-    console.log(imagesList.results);
     for (const image of imagesList.results) {
       createCard({
         url: image.urls.small,

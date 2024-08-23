@@ -1,24 +1,14 @@
 .navegation_bar {
-  width: 95vw;
+  width: 100%;
   height: 100px;
   padding: var(--isc-padding-nav-bar);
-  position: fixed;
+  position: var(--isc-position-NavBar);
   top: 0;
-  background-color: #fcfefea1;
-  border: 1px solid red;
+  background-color: var(--isc-bg-NavBar);
 }
 
 .logo_container > img {
   width: var(--isc-logo-size);
   height: var(--isc-logo-size);
   cursor: pointer;
-}
-
-@media screen and (min-width: 600px) {
-  .user_button {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 865px) {
 }

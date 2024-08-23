@@ -2,7 +2,7 @@ import './BottomBox.css';
 
 export const createBottomBox = ({ name, date, parentNode }) => {
   const divBottomBox = document.createElement('div');
-  divBottomBox.className = 'div_bottom_box';
+  divBottomBox.classList.add('div_bottom_box', 'flex_container');
 
   const pName = document.createElement('p');
   pName.textContent = name;

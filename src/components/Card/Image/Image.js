@@ -17,14 +17,13 @@ export const createImg = ({
 
   const altMid = alt.replace(id, '');
   const altFixed = altMid.replaceAll('-', ' ');
-  console.log(altFixed);
   img.alt = altFixed;
 
   divImg.appendChild(img);
 
   // Hover info
   const divLikes = document.createElement('div');
-  divLikes.className = 'div_likes';
+  divLikes.classList.add('div_likes', 'flex_container');
 
   const imgHeart = document.createElement('img');
   imgHeart.src = 'public/assets/likes.svg';
@@ -36,7 +35,7 @@ export const createImg = ({
   divLikes.appendChild(p);
 
   const divPhotos = document.createElement('div');
-  divPhotos.className = 'div_photos';
+  divPhotos.classList.add('div_photos', 'flex_container');
 
   const imgPhotos = document.createElement('img');
   imgPhotos.src = 'public/assets/pics.svg';

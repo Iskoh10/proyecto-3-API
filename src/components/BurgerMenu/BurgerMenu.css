@@ -1,23 +1,19 @@
 .div_menu {
   min-width: 40px;
   height: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  flex-direction: var(--isc-fd-column);
+  position: var(--isc-pr);
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   overflow: hidden;
-  margin: 0 10px;
-  border: 1px solid green;
+  margin: var(--isc-margin-divMenu);
 }
 
 .bar_menu {
   width: 35px;
   height: 4px;
-  border-radius: 3em;
-  background-color: black;
+  border-radius: var(--isc-br-barMenu);
+  background-color: var(--isc-color-barMenu);
   transition: all 0.5s ease-in-out;
 }
 
@@ -26,9 +22,9 @@
   content: '';
   width: 35px;
   height: 4px;
-  border-radius: 3em;
-  background-color: black;
-  position: absolute;
+  border-radius: var(--isc-br-barMenu);
+  background-color: var(--isc-color-barMenu);
+  position: var(--isc-pa);
   transition: all 0.5s ease-in-out;
 }
 
@@ -58,34 +54,34 @@
 }
 
 .dp_content {
-  background-color: #16111110;
+  background-color: var(--isc-bg-dp-content);
   backdrop-filter: blur(0.4rem);
-  border-radius: 5px;
-  border: 1px solid black;
+  border-radius: var(--isc-br-dp-content);
+  border: var(--isc-b-dp-content);
   z-index: 1;
   width: 110px;
   height: 100px;
-  padding: 2%;
-  position: absolute;
+  padding: var(--isc-padding-dp-content);
+  position: var(--isc-pa);
   left: 75px;
   top: 75px;
 }
 
 .dp_content ul {
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: var(--isc-d-flex);
+  flex-direction: var(--isc-fd-column);
   font: var(--isc-fs-secondary);
-  justify-content: space-between;
+  justify-content: var(--isc-jc-flex-space-between);
 }
 
 .dp_content > ul li:hover {
-  position: relative;
+  position: var(--isc-pr);
   font-weight: 600;
 }
 
 @media screen and (min-width: 1000px) {
-  .div_menu {
-    display: none;
+  div.div_menu {
+    display: var(--isc-d-none);
   }
 }
