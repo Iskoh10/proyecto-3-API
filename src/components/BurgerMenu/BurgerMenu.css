@@ -58,7 +58,7 @@
   backdrop-filter: blur(0.4rem);
   border-radius: var(--isc-br-dp-content);
   border: var(--isc-b-dp-content);
-  z-index: 1;
+  z-index: 5;
   width: 110px;
   height: 100px;
   padding: var(--isc-padding-dp-content);
