@@ -5,6 +5,7 @@
   position: var(--isc-position-NavBar);
   top: 0;
   background-color: var(--isc-bg-NavBar);
+  z-index: 2;
 }
 
 .logo_container > img {

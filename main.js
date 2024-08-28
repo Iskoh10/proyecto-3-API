@@ -47,6 +47,8 @@ async function getImages(word) {
   }
 }
 
+getImages('orquidea');
+
 createFooter();
 
 const input = document.querySelector('.search_input');

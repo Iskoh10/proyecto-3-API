@@ -6,6 +6,7 @@
   border-radius: var(--isc-br-s-bar);
   background-color: var(--isc-bg-s-bar);
   position: var(--isc-pr);
+  z-index: 4;
 }
 
 .search_bar > input {
